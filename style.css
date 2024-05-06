@@ -1,0 +1,156 @@
+body {
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(30, 38%, 92%);
+
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    width: 40%;
+    height: auto;
+    min-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+img {
+    width: 50%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+}
+
+.right-side {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.right-side>* {
+    margin-bottom: 10px;
+}
+
+.type {
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.description,
+.type,
+.original-price {
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.title {
+    font-family: "Fraunces", serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    line-height: 3rem;
+}
+
+button {
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    padding: 25px;
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    gap: 5px;
+}
+
+button img {
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: hsl(156, 42%, 18%);
+}
+
+
+@media (max-width: 768px) {
+    body {
+        height: initial;
+        padding: 25px 0;
+    }
+
+    main {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .right-side {
+        padding: 15px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .right-side>* {
+        margin-bottom: 0;
+    }
+
+    .title {
+        margin-top: 1rem;
+    }
+
+    .type {
+        margin: 0;
+    }
+
+
+    .pricing>* {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
