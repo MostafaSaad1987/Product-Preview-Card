@@ -16,7 +16,7 @@ main {
     background-color: white;
     width: 40%;
     height: auto;
-    min-width: 300px;
+    min-width: 700px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -122,6 +122,7 @@ button:hover {
         width: 90%;
         height: auto;
         align-items: center;
+        min-width: initial;
     }
 
     img {
